@@ -1,0 +1,11 @@
+<h1>GeekInstagram</h1>
+<h3>New Post</h3>
+<%= form_for @post do |f| %>
+<div class="field">
+    <p><%= f.text_field :post_name, :size => 140 %></p>
+    <p><%= f.label :image %></p>
+    <p><%= f.file_field :image %></p>
+</div>
+<%= f.submit "投稿する" %>
+<% end %>
+<p><%= link_to "Post一覧に戻る", posts_path %></p>

@@ -1,0 +1,39 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.photo {
+    border-radius: 50%;  /*角を丸くする指定*/
+    width: 100px;  /*横幅*/
+    height: 100px;  /*縦幅*/
+}
+
+.psn{
+    .psn1{
+        margin-top: 200px;
+        .twitter{
+            margin:  0 auto; 
+        }
+        h5{
+            font-weight: bold;
+        }
+    }
+    .login{
+        width: 200px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background: transparent;
+        background-color: rgb(60, 174, 255);
+        border-radius: 40px;
+    }
+}
+
+.psl{
+    .psl1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        display: flex;
+    }
+}
