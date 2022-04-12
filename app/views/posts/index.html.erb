@@ -1,6 +1,8 @@
-<h1>GeekInstagram</h1>
-<br>
-<h3>Post一覧</h3>
+<div class="title">
+    <h1>GeekInstagram</h1>
+    <br>
+    <h3>Post一覧</h3>
+</div>
 
 <h5>投稿を検索</h5>
 <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
@@ -13,7 +15,7 @@
     <%= link_to "マイページへ", user_path(current_user.id) %>
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
 <% else %>
-    <%= link_to "ログイン", tweets_path %>
+    <%= link_to "ログイン", posts_path %>
     <%= link_to "新規登録", new_user_registration_path %></h6>
 <% end %>
 
